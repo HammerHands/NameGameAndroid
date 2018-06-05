@@ -1,4 +1,4 @@
-package com.dalemathieu.namegameandroid.model;
+package com.dalemathieu.namegameandroid.network.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -13,7 +13,7 @@ public class Headshot implements Parcelable {
     private int width;
 
     public Headshot(String type, String mimeType, String id, String url, String alt,
-                    int height, int width) {
+                int height, int width) {
         this.type = type;
         this.mimeType = mimeType;
         this.id = id;
@@ -23,7 +23,7 @@ public class Headshot implements Parcelable {
         this.width = width;
     }
 
-    private Headshot(Parcel  in) {
+    private Headshot(Parcel in) {
         this.type = in.readString();
         this.mimeType = in.readString();
         this.id = in.readString();
